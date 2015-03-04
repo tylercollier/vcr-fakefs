@@ -1,6 +1,5 @@
 module VCR
   module FakeFS
-    # Version module
     module Version
       VERSION = '0.1.0'
 
