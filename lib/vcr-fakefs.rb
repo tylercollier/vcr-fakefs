@@ -1,3 +1,5 @@
+require 'vcr'
+require 'fakefs/safe'
 require 'vcr/fakefs/fakefs_persister'
 
 module VCR
