@@ -4,6 +4,8 @@ For use with the VCR and FakeFS gems.
 
 Record your vcr cassettes to the real file system, even when using FakeFS.
 
+Without VCR-FakeFS, if you use both VCR and FakeFS, FakeFS works as you intend, but while it's activated, VCR's cassettes from your real file system won't exist, and network calls won't be saved to your real FS, defeating the purpose of using it. VCR-FakeFS keeps FakeFS the same, and makes sure VCR uses your real file system for storage.
+
 # Install
 
 ## Using bundler
