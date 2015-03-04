@@ -1,3 +1,6 @@
+require 'vcr'
+require 'fakefs/safe'
+
 module VCR
   module FakeFS
     class FakeFSPersister
