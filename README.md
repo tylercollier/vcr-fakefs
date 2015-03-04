@@ -1,5 +1,7 @@
 # VCR-FakeFS
 
+[![Gem Version](https://badge.fury.io/rb/vcr-fakefs.png)](http://badge.fury.io/rb/vcr-fakefs) [![Build Status](https://secure.travis-ci.org/tylercollier/vcr-fakefs.png?branch=master)](http://travis-ci.org/tylercollier/vcr-fakefs)
+
 For use with the VCR and FakeFS gems.
 
 Record your vcr cassettes to the real file system, even when using FakeFS.
