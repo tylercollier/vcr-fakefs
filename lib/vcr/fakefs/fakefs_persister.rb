@@ -10,7 +10,8 @@ module VCR
       end
 
       # I got this idea from: http://www.alfajango.com/blog/method_missing-a-rubyists-beautiful-mistress/
-      VCR::Cassette::Persisters.instance_methods(false).each do |name|
+      fs_mod = VCR::Cassette::Persisters::FileSystem
+      fs_mod.instance_methods(false).concat(fs_mod.private_instance_methods(false)).each do |name|
         define_method(name) do |*args, &block|
           ::FakeFS.without do
             @orig_fs_persister.send name, *args, &block
