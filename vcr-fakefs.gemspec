@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   # According to the following url, 2.2 is where VCR supported persistence
   # abstraction: https://github.com/vcr/vcr/issues/234
-  s.add_dependency "vcr", "~> 2.2"
+  s.add_dependency "vcr", ">= 2.2"
   # FakeFS 0.4.1 is where the "without" support was added.
   s.add_dependency "fakefs", "~> 0.4", ">= 0.4.1"
 
